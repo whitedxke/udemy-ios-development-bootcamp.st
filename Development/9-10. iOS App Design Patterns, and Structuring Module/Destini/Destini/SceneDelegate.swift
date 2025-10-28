@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Life Line
+//  Destini
 //
 //  Created by Pavel Betenya on 28.10.25.
 //
