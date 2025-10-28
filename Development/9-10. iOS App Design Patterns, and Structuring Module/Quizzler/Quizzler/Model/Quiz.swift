@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
+//  Quiz.swift
 //  Quizzler
 //
-//  Created by Pavel Betenya on 22.10.25.
+//  Created by Pavel Betenya on 28.10.25.
 //
 
-import UIKit
+import Foundation
 
-class ViewController: UIViewController {
+struct Quiz {
     let quiz = [
         Question(
             text: "Two plus two equals four.",
@@ -37,37 +37,27 @@ class ViewController: UIViewController {
     
     var questionNumber = 0
     
-    @IBOutlet weak var questionText: UILabel!
-    
-    @IBOutlet weak var barProgress: UIProgressView!
-    
-    @IBOutlet weak var trueButton: UIButton!
-    
-    @IBOutlet weak var falseButton: UIButton!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        updateUI()
+    func checkAnswer(_ userAnswer: String) -> Bool {
+        if userAnswer == quiz[questionNumber].answer {
+            return true
+        } else {
+            return false
+        }
     }
     
-    @IBAction func answerButtonPressed(_ sender: UIButton) {
-        let userAnswer = sender.currentTitle
-        let actualAnswer = quiz[questionNumber].answer
-        if userAnswer == actualAnswer {
-            print("Right.")
-        } else {
-            print("Wrong.")
-        }
-        
+    func getQuestionText() -> String {
+        return quiz[questionNumber].text
+    }
+    
+    func getProgress() -> Float {
+        return Float(questionNumber + 1) / Float(quiz.count)
+    }
+    
+    mutating func nextQuestion() {
         if questionNumber + 1 < quiz.count {
             questionNumber += 1
         } else {
             questionNumber = 0
         }
-        updateUI()
-    }
-    
-    func updateUI() {
-        questionText.text = quiz[questionNumber].text
     }
 }
