@@ -1,5 +1,5 @@
 //
-//  ResultViewController.swift
+//  ViewController.swift
 //  BMI-Calculator
 //
 //  Created by Pavel Betenya on 16.11.25.
