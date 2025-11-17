@@ -14,9 +14,15 @@ class ResultViewController: UIViewController {
     
     var bmiValue: String?
     
+    var advice: String?
+    
+    var color: UIColor?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bmiLabel.text = bmiValue
+        adviceLabel.text = advice
+        view.backgroundColor = color
     }
     
     @IBAction func recalculateBMIPressed(_ sender: Any) {
