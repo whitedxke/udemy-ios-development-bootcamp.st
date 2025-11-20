@@ -6,7 +6,7 @@ The code has been adapted, and reworked by me based on the course materials. All
 
 ## Projects Completed During the Course.
 
-### Previous Projects:
+### 0-8. Previous Projects:
 
 - [Egg Timer](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/development/Development/0.%20Previous%20Projects/EggTimer).
 - [Xylophone](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/development/Development/0.%20Previous%20Projects/Xylophone).
