@@ -16,12 +16,14 @@ struct WeatherManager {
     
     let parameter = "units=metric"
     
-    func getWeather(city: String) {
+    var delegate: WeatherManagerDelegate?
+    
+    func getWeather(_ city: String) {
         let url = "\(domain)\(path)?appid=\(apiKey)&q=\(city)&\(parameter)"
-        performRequest(url: url)
+        performRequest(url)
     }
     
-    func performRequest(url: String) {
+    func performRequest(_ url: String) {
         // Step 1. Create URL-link.
         if let url = URL(string: url) {
             // Step 2. Create URL-session.
@@ -30,12 +32,14 @@ struct WeatherManager {
             // Step 3. Give the session a task.
             let task = session.dataTask(with: url) {(data, respones, error) in
                 if error != nil {
-                    print(error!)
+                    self.delegate?.didFailWithError(error!)
                     return
                 }
                 
                 if let json = data {
-                    self.parseJSON(data: json)
+                    if let weather = self.parseJSON(json) {
+                        self.delegate?.didUpadateWether(self, weather: weather)
+                    }
                 }
             }
             
@@ -44,22 +48,33 @@ struct WeatherManager {
         }
     }
     
-    func parseJSON(data: Data) {
+    func parseJSON(_ data: Data) -> WeatherModel? {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(WeatherData.self, from: data)
             let conditionId = decodedData.weather[0].id
             let city = decodedData.name
             let temperature = decodedData.main.temp
-            
             let weather = WeatherModel(
                 conditionId: conditionId,
                 city: city,
                 temperature: temperature,
             )
             
+            return weather
+            
         } catch {
-            print(error)
+            self.delegate?.didFailWithError(error)
+            return nil
         }
     }
+}
+
+protocol WeatherManagerDelegate {
+    func didUpadateWether(
+        _ weatherManager: WeatherManager,
+        weather: WeatherModel,
+    )
+    
+    func didFailWithError(_ error: Error)
 }
