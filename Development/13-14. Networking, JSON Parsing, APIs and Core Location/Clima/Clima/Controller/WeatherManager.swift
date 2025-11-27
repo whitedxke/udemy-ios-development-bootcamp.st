@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct WeatherManager {
     let apiKey = "openweathermap-api-key"
@@ -18,8 +19,13 @@ struct WeatherManager {
     
     var delegate: WeatherManagerDelegate?
     
-    func getWeather(_ city: String) {
+    func getWeatherByCity(_ city: String) {
         let url = "\(domain)\(path)?appid=\(apiKey)&q=\(city)&\(parameter)"
+        performRequest(url)
+    }
+    
+    func getWeatherByLocation(_ latitude: CLLocationDegrees, _ longitute: CLLocationDegrees) {
+        let url = "\(domain)\(path)?appid=\(apiKey)&lat=\(latitude)&lon=\(longitute)&\(parameter)"
         performRequest(url)
     }
     
