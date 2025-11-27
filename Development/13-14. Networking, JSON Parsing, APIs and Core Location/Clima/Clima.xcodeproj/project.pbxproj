@@ -10,22 +10,9 @@
 		059026FC2ECBCB1A0057B027 /* Clima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		0590270E2ECBCB1B0057B027 /* Exceptions for "Clima" folder in "Clima" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 059026FB2ECBCB1A0057B027 /* Clima */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		059026FE2ECBCB1A0057B027 /* Clima */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				0590270E2ECBCB1B0057B027 /* Exceptions for "Clima" folder in "Clima" target */,
-			);
 			path = Clima;
 			sourceTree = "<group>";
 		};
