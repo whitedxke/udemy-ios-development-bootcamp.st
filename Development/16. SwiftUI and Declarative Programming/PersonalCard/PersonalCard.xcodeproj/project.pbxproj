@@ -7,19 +7,32 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		059026FC2ECBCB1A0057B027 /* Clima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clima.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A6F85E2EE8ADD5005656DE /* PersonalCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		058A27B12EE9A73300CAC088 /* Exceptions for "PersonalCard" folder in "PersonalCard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 05A6F85D2EE8ADD5005656DE /* PersonalCard */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		059026FE2ECBCB1A0057B027 /* Clima */ = {
+		05A6F8602EE8ADD5005656DE /* PersonalCard */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Clima;
+			exceptions = (
+				058A27B12EE9A73300CAC088 /* Exceptions for "PersonalCard" folder in "PersonalCard" target */,
+			);
+			path = PersonalCard;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		059026F92ECBCB1A0057B027 /* Frameworks */ = {
+		05A6F85B2EE8ADD5005656DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		059026F32ECBCB1A0057B027 = {
+		05A6F8552EE8ADD5005656DE = {
 			isa = PBXGroup;
 			children = (
-				059026FE2ECBCB1A0057B027 /* Clima */,
-				059026FD2ECBCB1A0057B027 /* Products */,
+				05A6F8602EE8ADD5005656DE /* PersonalCard */,
+				05A6F85F2EE8ADD5005656DE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		059026FD2ECBCB1A0057B027 /* Products */ = {
+		05A6F85F2EE8ADD5005656DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				059026FC2ECBCB1A0057B027 /* Clima.app */,
+				05A6F85E2EE8ADD5005656DE /* PersonalCard.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +61,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		059026FB2ECBCB1A0057B027 /* Clima */ = {
+		05A6F85D2EE8ADD5005656DE /* PersonalCard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0590270F2ECBCB1B0057B027 /* Build configuration list for PBXNativeTarget "Clima" */;
+			buildConfigurationList = 05A6F8692EE8ADD6005656DE /* Build configuration list for PBXNativeTarget "PersonalCard" */;
 			buildPhases = (
-				059026F82ECBCB1A0057B027 /* Sources */,
-				059026F92ECBCB1A0057B027 /* Frameworks */,
-				059026FA2ECBCB1A0057B027 /* Resources */,
+				05A6F85A2EE8ADD5005656DE /* Sources */,
+				05A6F85B2EE8ADD5005656DE /* Frameworks */,
+				05A6F85C2EE8ADD5005656DE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				059026FE2ECBCB1A0057B027 /* Clima */,
+				05A6F8602EE8ADD5005656DE /* PersonalCard */,
 			);
-			name = Clima;
+			name = PersonalCard;
 			packageProductDependencies = (
 			);
-			productName = Clima;
-			productReference = 059026FC2ECBCB1A0057B027 /* Clima.app */;
+			productName = PersonalCard;
+			productReference = 05A6F85E2EE8ADD5005656DE /* PersonalCard.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		059026F42ECBCB1A0057B027 /* Project object */ = {
+		05A6F8562EE8ADD5005656DE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
-					059026FB2ECBCB1A0057B027 = {
+					05A6F85D2EE8ADD5005656DE = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 059026F72ECBCB1A0057B027 /* Build configuration list for PBXProject "Clima" */;
+			buildConfigurationList = 05A6F8592EE8ADD5005656DE /* Build configuration list for PBXProject "PersonalCard" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 059026F32ECBCB1A0057B027;
+			mainGroup = 05A6F8552EE8ADD5005656DE;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 059026FD2ECBCB1A0057B027 /* Products */;
+			productRefGroup = 05A6F85F2EE8ADD5005656DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				059026FB2ECBCB1A0057B027 /* Clima */,
+				05A6F85D2EE8ADD5005656DE /* PersonalCard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		059026FA2ECBCB1A0057B027 /* Resources */ = {
+		05A6F85C2EE8ADD5005656DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +128,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		059026F82ECBCB1A0057B027 /* Sources */ = {
+		05A6F85A2EE8ADD5005656DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,81 +138,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		059027102ECBCB1B0057B027 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J4V5K7839S;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Clima/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.whitedxke.Clima;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		059027112ECBCB1B0057B027 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J4V5K7839S;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Clima/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.whitedxke.Clima;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		059027122ECBCB1B0057B027 /* Debug */ = {
+		05A6F8672EE8ADD6005656DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,7 +202,7 @@
 			};
 			name = Debug;
 		};
-		059027132ECBCB1B0057B027 /* Release */ = {
+		05A6F8682EE8ADD6005656DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -320,28 +259,102 @@
 			};
 			name = Release;
 		};
+		05A6F86A2EE8ADD6005656DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4V5K7839S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PersonalCard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.whitedxke.PersonalCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05A6F86B2EE8ADD6005656DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4V5K7839S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PersonalCard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.whitedxke.PersonalCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		059026F72ECBCB1A0057B027 /* Build configuration list for PBXProject "Clima" */ = {
+		05A6F8592EE8ADD5005656DE /* Build configuration list for PBXProject "PersonalCard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				059027122ECBCB1B0057B027 /* Debug */,
-				059027132ECBCB1B0057B027 /* Release */,
+				05A6F8672EE8ADD6005656DE /* Debug */,
+				05A6F8682EE8ADD6005656DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0590270F2ECBCB1B0057B027 /* Build configuration list for PBXNativeTarget "Clima" */ = {
+		05A6F8692EE8ADD6005656DE /* Build configuration list for PBXNativeTarget "PersonalCard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				059027102ECBCB1B0057B027 /* Debug */,
-				059027112ECBCB1B0057B027 /* Release */,
+				05A6F86A2EE8ADD6005656DE /* Debug */,
+				05A6F86B2EE8ADD6005656DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 059026F42ECBCB1A0057B027 /* Project object */;
+	rootObject = 05A6F8562EE8ADD5005656DE /* Project object */;
 }

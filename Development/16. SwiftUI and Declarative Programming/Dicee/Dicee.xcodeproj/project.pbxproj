@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		059026FC2ECBCB1A0057B027 /* Clima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clima.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		058A27CC2EEAC0AC00CAC088 /* Dicee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dicee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		059026FE2ECBCB1A0057B027 /* Clima */ = {
+		058A27CE2EEAC0AC00CAC088 /* Dicee */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Clima;
+			path = Dicee;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		059026F92ECBCB1A0057B027 /* Frameworks */ = {
+		058A27C92EEAC0AC00CAC088 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		059026F32ECBCB1A0057B027 = {
+		058A27C32EEAC0AC00CAC088 = {
 			isa = PBXGroup;
 			children = (
-				059026FE2ECBCB1A0057B027 /* Clima */,
-				059026FD2ECBCB1A0057B027 /* Products */,
+				058A27CE2EEAC0AC00CAC088 /* Dicee */,
+				058A27CD2EEAC0AC00CAC088 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		059026FD2ECBCB1A0057B027 /* Products */ = {
+		058A27CD2EEAC0AC00CAC088 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				059026FC2ECBCB1A0057B027 /* Clima.app */,
+				058A27CC2EEAC0AC00CAC088 /* Dicee.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		059026FB2ECBCB1A0057B027 /* Clima */ = {
+		058A27CB2EEAC0AC00CAC088 /* Dicee */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0590270F2ECBCB1B0057B027 /* Build configuration list for PBXNativeTarget "Clima" */;
+			buildConfigurationList = 058A27D72EEAC0AE00CAC088 /* Build configuration list for PBXNativeTarget "Dicee" */;
 			buildPhases = (
-				059026F82ECBCB1A0057B027 /* Sources */,
-				059026F92ECBCB1A0057B027 /* Frameworks */,
-				059026FA2ECBCB1A0057B027 /* Resources */,
+				058A27C82EEAC0AC00CAC088 /* Sources */,
+				058A27C92EEAC0AC00CAC088 /* Frameworks */,
+				058A27CA2EEAC0AC00CAC088 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				059026FE2ECBCB1A0057B027 /* Clima */,
+				058A27CE2EEAC0AC00CAC088 /* Dicee */,
 			);
-			name = Clima;
+			name = Dicee;
 			packageProductDependencies = (
 			);
-			productName = Clima;
-			productReference = 059026FC2ECBCB1A0057B027 /* Clima.app */;
+			productName = Dicee;
+			productReference = 058A27CC2EEAC0AC00CAC088 /* Dicee.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		059026F42ECBCB1A0057B027 /* Project object */ = {
+		058A27C42EEAC0AC00CAC088 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
-					059026FB2ECBCB1A0057B027 = {
+					058A27CB2EEAC0AC00CAC088 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 059026F72ECBCB1A0057B027 /* Build configuration list for PBXProject "Clima" */;
+			buildConfigurationList = 058A27C72EEAC0AC00CAC088 /* Build configuration list for PBXProject "Dicee" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 059026F32ECBCB1A0057B027;
+			mainGroup = 058A27C32EEAC0AC00CAC088;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 059026FD2ECBCB1A0057B027 /* Products */;
+			productRefGroup = 058A27CD2EEAC0AC00CAC088 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				059026FB2ECBCB1A0057B027 /* Clima */,
+				058A27CB2EEAC0AC00CAC088 /* Dicee */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		059026FA2ECBCB1A0057B027 /* Resources */ = {
+		058A27CA2EEAC0AC00CAC088 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		059026F82ECBCB1A0057B027 /* Sources */ = {
+		058A27C82EEAC0AC00CAC088 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,81 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		059027102ECBCB1B0057B027 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J4V5K7839S;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Clima/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.whitedxke.Clima;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		059027112ECBCB1B0057B027 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J4V5K7839S;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Clima/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.whitedxke.Clima;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		059027122ECBCB1B0057B027 /* Debug */ = {
+		058A27D52EEAC0AE00CAC088 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,7 +189,7 @@
 			};
 			name = Debug;
 		};
-		059027132ECBCB1B0057B027 /* Release */ = {
+		058A27D62EEAC0AE00CAC088 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -320,28 +246,92 @@
 			};
 			name = Release;
 		};
+		058A27D82EEAC0AE00CAC088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4V5K7839S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.whitedxke.Dicee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		058A27D92EEAC0AE00CAC088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4V5K7839S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.whitedxke.Dicee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		059026F72ECBCB1A0057B027 /* Build configuration list for PBXProject "Clima" */ = {
+		058A27C72EEAC0AC00CAC088 /* Build configuration list for PBXProject "Dicee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				059027122ECBCB1B0057B027 /* Debug */,
-				059027132ECBCB1B0057B027 /* Release */,
+				058A27D52EEAC0AE00CAC088 /* Debug */,
+				058A27D62EEAC0AE00CAC088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0590270F2ECBCB1B0057B027 /* Build configuration list for PBXNativeTarget "Clima" */ = {
+		058A27D72EEAC0AE00CAC088 /* Build configuration list for PBXNativeTarget "Dicee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				059027102ECBCB1B0057B027 /* Debug */,
-				059027112ECBCB1B0057B027 /* Release */,
+				058A27D82EEAC0AE00CAC088 /* Debug */,
+				058A27D92EEAC0AE00CAC088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 059026F42ECBCB1A0057B027 /* Project object */;
+	rootObject = 058A27C42EEAC0AC00CAC088 /* Project object */;
 }

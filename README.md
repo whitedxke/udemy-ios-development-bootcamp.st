@@ -20,3 +20,13 @@ The code has been adapted, and reworked by me based on the course materials. All
 
 - [BMI Calculator](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/development/Development/11-12.%20Classes%2C%20Inheritance%20%26%20Advanced%20Optionals/BMI-Calculator).
 - [Tipsy](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/development/Development/11-12.%20Classes%2C%20Inheritance%20%26%20Advanced%20Optionals/Tipsy).
+
+### 13-14. Networking, JSON Parsing, APIs and Core Location:
+
+- [Clima](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/main/Development/13-14.%20Networking%2C%20JSON%20Parsing%2C%20APIs%20and%20Core%20Location).
+
+### 16. SwiftUI, and Declarative Programming:
+
+- [Personal Card](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/main/Development/16.%20SwiftUI%20and%20Declarative%20Programming/PersonalCard).
+- [Dicee](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/main/Development/16.%20SwiftUI%20and%20Declarative%20Programming/Dicee).
+- [H4X0R](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/main/Development/16.%20SwiftUI%20and%20Declarative%20Programming/H4X0R).
