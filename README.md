@@ -29,3 +29,4 @@ The code has been adapted, and reworked by me based on the course materials. All
 
 - [Personal Card](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/main/Development/16.%20SwiftUI%20and%20Declarative%20Programming/PersonalCard).
 - [Dicee](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/main/Development/16.%20SwiftUI%20and%20Declarative%20Programming/Dicee).
+- [H4X0R](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/main/Development/16.%20SwiftUI%20and%20Declarative%20Programming/H4X0R).
