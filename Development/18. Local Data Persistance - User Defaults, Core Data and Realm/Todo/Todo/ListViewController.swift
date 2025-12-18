@@ -1,0 +1,38 @@
+//
+//  ViewController.swift
+//  Todo
+//
+//  Created by Pavel Betenya on 12.12.25.
+//
+
+import UIKit
+
+class ListViewController: UITableViewController {
+    let array = [
+        "Item 1",
+        "Item 2",
+        "Item 3",
+        "Item 4",
+        "Item 5",
+    ]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+    
+    // Mark. Tableview Datasource Methods.
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return array.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "ToDoItemCell",
+            for: indexPath,
+        )
+        cell.textLabel?.text = array[indexPath.row]
+        return cell
+    }
+}
