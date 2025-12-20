@@ -35,4 +35,16 @@ class ListViewController: UITableViewController {
         cell.textLabel?.text = array[indexPath.row]
         return cell
     }
+    
+    // Mark. Tableview Delegate Methods.
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .none
+        } else {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        }
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
