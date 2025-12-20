@@ -8,21 +8,18 @@
 import UIKit
 
 class ListViewController: UITableViewController {
-    var array = [
-        "Item 1",
-        "Item 2",
-        "Item 3",
-        "Item 4",
-        "Item 5",
-    ]
+    var array = [Item]()
     
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let items = defaults.array(forKey: "saveToDoItemsKey") as? [String] {
-            array = items
-        }
+        
+        // TODO: Only for testing.
+        let newItem = Item()
+        newItem.title = "New Item!"
+        
+        array.append(newItem)
     }
     
     // Mark. Tableview Datasource Methods.
@@ -36,33 +33,53 @@ class ListViewController: UITableViewController {
             withIdentifier: "ToDoItemCell",
             for: indexPath,
         )
-        cell.textLabel?.text = array[indexPath.row]
+        let item = array[indexPath.row]
+        
+        cell.textLabel?.text = item.title
+        
+        if item.isCompleted == true {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
+        
         return cell
     }
     
     // Mark. Tableview Delegate Methods.
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
-            tableView.cellForRow(at: indexPath)?.accessoryType = .none
+        let item = array[indexPath.row]
+        
+        if item.isCompleted == false {
+            item.isCompleted = true
         } else {
-            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+            item.isCompleted = false
         }
         
-        tableView.deselectRow(at: indexPath, animated: true)
+        tableView.reloadData()
+        tableView.deselectRow(
+            at: indexPath,
+            animated: true,
+        )
     }
     
     // Mark: Add a new Item.
     
     @IBAction func addNewItemPressed(_ sender: UIBarButtonItem) {
         var textField = UITextField()
+        
         let alert = UIAlertController(
             title: "Add a new Item?",
             message: "What do you want to get done next? Type it below.",
             preferredStyle: .alert,
         )
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
-            self.array.append(textField.text!)
+            let newItem = Item()
+            
+            newItem.title = textField.text!
+            
+            self.array.append(newItem)
             self.defaults.set(
                 self.array,
                 forKey: "saveToDoItemsKey",
@@ -74,9 +91,12 @@ class ListViewController: UITableViewController {
             textField.placeholder = "Type here.."
             textField = alertTextField
         }
-        
         alert.addAction(action)
-        
-        present(alert, animated: true , completion: nil)
+    
+        present(
+            alert,
+            animated: true,
+            completion: nil,
+        )
     }
 }
