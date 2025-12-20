@@ -37,11 +37,7 @@ class ListViewController: UITableViewController {
         
         cell.textLabel?.text = item.title
         
-        if item.isCompleted == true {
-            cell.accessoryType = .checkmark
-        } else {
-            cell.accessoryType = .none
-        }
+        cell.accessoryType = item.isCompleted == true ? .checkmark : .none
         
         return cell
     }
