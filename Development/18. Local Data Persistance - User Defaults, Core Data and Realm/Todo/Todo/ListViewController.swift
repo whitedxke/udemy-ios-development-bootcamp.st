@@ -8,7 +8,7 @@
 import UIKit
 
 class ListViewController: UITableViewController {
-    let array = [
+    var array = [
         "Item 1",
         "Item 2",
         "Item 3",
@@ -46,5 +46,29 @@ class ListViewController: UITableViewController {
         }
         
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    // Mark: Add a new Item.
+    
+    @IBAction func addNewItemPressed(_ sender: UIBarButtonItem) {
+        var textField = UITextField()
+        let alert = UIAlertController(
+            title: "Add a new Item?",
+            message: "What do you want to get done next? Type it below.",
+            preferredStyle: .alert,
+        )
+        let action = UIAlertAction(title: "Add", style: .default) { (action) in
+            self.array.append(textField.text!)
+            self.tableView.reloadData()
+        }
+        
+        alert.addTextField { (alertTextField) in
+            textField.placeholder = "Type here.."
+            textField = alertTextField
+        }
+        
+        alert.addAction(action)
+        
+        present(alert, animated: true , completion: nil)
     }
 }
