@@ -10,16 +10,13 @@ import UIKit
 class ListViewController: UITableViewController {
     var array = [Item]()
     
-    let defaults = UserDefaults.standard
+    let dataFilePath = FileManager.default.urls(
+        for: .documentDirectory,
+        in: .userDomainMask,
+    ).first?.appendingPathComponent("ToDoItems.plist")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // TODO: Only for testing.
-        let newItem = Item()
-        newItem.title = "New Item!"
-        
-        array.append(newItem)
     }
     
     // Mark. Tableview Datasource Methods.
@@ -53,7 +50,7 @@ class ListViewController: UITableViewController {
             item.isCompleted = false
         }
         
-        tableView.reloadData()
+        self.saveNewItem()
         tableView.deselectRow(
             at: indexPath,
             animated: true,
@@ -76,11 +73,7 @@ class ListViewController: UITableViewController {
             newItem.title = textField.text!
             
             self.array.append(newItem)
-            self.defaults.set(
-                self.array,
-                forKey: "saveToDoItemsKey",
-            )
-            self.tableView.reloadData()
+            self.saveNewItem()
         }
         
         alert.addTextField { (alertTextField) in
@@ -94,5 +87,20 @@ class ListViewController: UITableViewController {
             animated: true,
             completion: nil,
         )
+    }
+    
+    // Mark. Model Manupulation Methods.
+    
+    func saveNewItem() {
+        let encoder = PropertyListEncoder()
+        
+        do {
+            let data = try encoder.encode(self.array)
+            try data.write(to: self.dataFilePath!)
+        } catch {
+            print(error)
+        }
+        
+        self.tableView.reloadData()
     }
 }
