@@ -16,9 +16,13 @@ class ListViewController: UITableViewController {
         "Item 5",
     ]
     
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        if let items = defaults.array(forKey: "saveToDoItemsKey") as? [String] {
+            array = items
+        }
     }
     
     // Mark. Tableview Datasource Methods.
@@ -59,6 +63,10 @@ class ListViewController: UITableViewController {
         )
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
             self.array.append(textField.text!)
+            self.defaults.set(
+                self.array,
+                forKey: "saveToDoItemsKey",
+            )
             self.tableView.reloadData()
         }
         
