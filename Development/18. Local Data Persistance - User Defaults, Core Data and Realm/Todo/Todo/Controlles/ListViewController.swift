@@ -17,6 +17,7 @@ class ListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loadDefaultItem()
     }
     
     // Mark. Tableview Datasource Methods.
@@ -97,10 +98,17 @@ class ListViewController: UITableViewController {
         do {
             let data = try encoder.encode(self.array)
             try data.write(to: self.dataFilePath!)
-        } catch {
-            print(error)
-        }
+        } catch {}
         
         self.tableView.reloadData()
+    }
+    
+    func loadDefaultItem() {
+        if let data = try? Data(contentsOf: dataFilePath!) {
+            let decoder = PropertyListDecoder()
+            do {
+                array = try decoder.decode([Item].self, from: data)
+            } catch {}
+        }
     }
 }
