@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ListViewController: UITableViewController {
     var array = [Item]()
@@ -15,9 +16,11 @@ class ListViewController: UITableViewController {
         in: .userDomainMask,
     ).first?.appendingPathComponent("ToDoItems.plist")
     
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loadDefaultItem()
+        // self.loadDefaultItem()
     }
     
     // Mark. Tableview Datasource Methods.
@@ -69,9 +72,10 @@ class ListViewController: UITableViewController {
             preferredStyle: .alert,
         )
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
-            let newItem = Item()
+            let newItem = Item(context: self.context)
             
             newItem.title = textField.text!
+            newItem.isCompleted = false
             
             self.array.append(newItem)
             self.saveNewItem()
@@ -93,22 +97,19 @@ class ListViewController: UITableViewController {
     // Mark. Model Manupulation Methods.
     
     func saveNewItem() {
-        let encoder = PropertyListEncoder()
-        
         do {
-            let data = try encoder.encode(self.array)
-            try data.write(to: self.dataFilePath!)
+            try self.context.save()
         } catch {}
         
         self.tableView.reloadData()
     }
     
-    func loadDefaultItem() {
-        if let data = try? Data(contentsOf: dataFilePath!) {
-            let decoder = PropertyListDecoder()
-            do {
-                array = try decoder.decode([Item].self, from: data)
-            } catch {}
-        }
-    }
+//    func loadDefaultItem() {
+//        if let data = try? Data(contentsOf: dataFilePath!) {
+//            let decoder = PropertyListDecoder()
+//            do {
+//                array = try decoder.decode([Item].self, from: data)
+//            } catch {}
+//        }
+//    }
 }
