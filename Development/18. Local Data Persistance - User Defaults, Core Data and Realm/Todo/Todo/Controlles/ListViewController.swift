@@ -11,16 +11,11 @@ import CoreData
 class ListViewController: UITableViewController {
     var array = [Item]()
     
-    let dataFilePath = FileManager.default.urls(
-        for: .documentDirectory,
-        in: .userDomainMask,
-    ).first?.appendingPathComponent("ToDoItems.plist")
-    
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // self.loadDefaultItem()
+        self.loadDefaultItem()
     }
     
     // Mark. Tableview Datasource Methods.
@@ -104,12 +99,10 @@ class ListViewController: UITableViewController {
         self.tableView.reloadData()
     }
     
-//    func loadDefaultItem() {
-//        if let data = try? Data(contentsOf: dataFilePath!) {
-//            let decoder = PropertyListDecoder()
-//            do {
-//                array = try decoder.decode([Item].self, from: data)
-//            } catch {}
-//        }
-//    }
+    func loadDefaultItem() {
+        let request: NSFetchRequest<Item> = Item.fetchRequest()
+        do {
+            array = try self.context.fetch(request)
+        } catch {}
+    }
 }
