@@ -41,13 +41,7 @@ class ListViewController: UITableViewController {
     // Mark. Tableview Delegate Methods.
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let item = array[indexPath.row]
-        
-        if item.isCompleted == false {
-            item.isCompleted = true
-        } else {
-            item.isCompleted = false
-        }
+       array[indexPath.row].isCompleted = !array[indexPath.row].isCompleted
         
         self.saveNewItem()
         tableView.deselectRow(
