@@ -18,7 +18,7 @@ class ListViewController: UITableViewController {
         self.loadDefaultItem()
     }
     
-    // Mark. Tableview Datasource Methods.
+    // MARK: Tableview Datasource Methods.
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return array.count
@@ -38,10 +38,10 @@ class ListViewController: UITableViewController {
         return cell
     }
     
-    // Mark. Tableview Delegate Methods.
+    // MARK: Tableview Delegate Methods.
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       array[indexPath.row].isCompleted = !array[indexPath.row].isCompleted
+        array[indexPath.row].isCompleted = !array[indexPath.row].isCompleted
         
         self.saveNewItem()
         tableView.deselectRow(
@@ -50,7 +50,7 @@ class ListViewController: UITableViewController {
         )
     }
     
-    // Mark: Add a new Item.
+    // MARK: Add a new Item.
     
     @IBAction func addNewItemPressed(_ sender: UIBarButtonItem) {
         var textField = UITextField()
@@ -83,7 +83,7 @@ class ListViewController: UITableViewController {
         )
     }
     
-    // Mark. Model Manupulation Methods.
+    // MARK: Model Manupulation Methods.
     
     func saveNewItem() {
         do {
@@ -93,10 +93,38 @@ class ListViewController: UITableViewController {
         self.tableView.reloadData()
     }
     
-    func loadDefaultItem() {
-        let request: NSFetchRequest<Item> = Item.fetchRequest()
+    func loadDefaultItem(with request: NSFetchRequest<Item> = Item.fetchRequest()) {
         do {
             array = try self.context.fetch(request)
         } catch {}
+        
+        tableView.reloadData()
+    }
+}
+
+// MARK: Search Bar Methods.
+
+extension ListViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let request: NSFetchRequest<Item> = Item.fetchRequest()
+        
+        if let text = searchBar.text, !text.isEmpty {
+            let predicate = NSPredicate(
+                format: "title CONTAINS[c] %@",
+                text,
+            )
+            request.predicate = predicate
+        } else {
+            request.predicate = nil
+        }
+        
+        let sortDescriptor = NSSortDescriptor(
+            key: "title",
+            ascending: true,
+        )
+        
+        request.sortDescriptors = [sortDescriptor]
+        
+        loadDefaultItem(with: request)
     }
 }
