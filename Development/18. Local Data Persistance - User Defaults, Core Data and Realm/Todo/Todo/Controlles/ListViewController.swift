@@ -108,23 +108,27 @@ extension ListViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         let request: NSFetchRequest<Item> = Item.fetchRequest()
         
-        if let text = searchBar.text, !text.isEmpty {
-            let predicate = NSPredicate(
-                format: "title CONTAINS[c] %@",
-                text,
-            )
-            request.predicate = predicate
-        } else {
-            request.predicate = nil
-        }
-        
-        let sortDescriptor = NSSortDescriptor(
-            key: "title",
-            ascending: true,
+        request.predicate = NSPredicate(
+            format: "title CONTAINS[c] %@",
+            searchBar.text!,
         )
-        
-        request.sortDescriptors = [sortDescriptor]
+        request.sortDescriptors = [
+            NSSortDescriptor(
+                key: "title",
+                ascending: true,
+            )
+        ]
         
         loadDefaultItem(with: request)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange _: String) {
+        if searchBar.text?.count == 0 {
+            loadDefaultItem()
+            
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+        }
     }
 }
