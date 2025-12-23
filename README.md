@@ -30,3 +30,8 @@ The code has been adapted, and reworked by me based on the course materials. All
 - [Personal Card](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/main/Development/16.%20SwiftUI%20and%20Declarative%20Programming/PersonalCard).
 - [Dicee](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/main/Development/16.%20SwiftUI%20and%20Declarative%20Programming/Dicee).
 - [H4X0R](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/main/Development/16.%20SwiftUI%20and%20Declarative%20Programming/H4X0R).
+
+### 18. [DRAFT]: Local Data Persistance - User Defaults, Core Data.
+### The project is not fully completed. The lessons have been reviewed for familiarization purposes.
+
+- [TODO](https://github.com/whitedxke/udemy-ios-development-bootcamp.st/tree/main/Development/18.%20Local%20Data%20Persistance%20-%20User%20Defaults%2C%20Core%20Data%20and%20Realm/Todo).
