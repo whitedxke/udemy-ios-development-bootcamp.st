@@ -1,17 +1,46 @@
-# Networking, JSON Parsing, APIs and Core Location. 
+# Networking, JSON Parsing, APIs & Core Location.
 
-Clima takes your app development skills to the next level by introducing live data fetching from the internet via APIs. This module bridges the gap between static apps and dynamic, data-driven experiences.
+This module bridges the gap between static applications and dynamic, data-driven experiences by introducing live data fetching from the internet via APIs. The focus is on networking, asynchronous programming and location services.
 
-You will create a dark-mode enabled weather app, that provides weather updates for the user’s current location using GPS, as well as for manually searched cities.
+----
 
-Key Highlights:
-- Build a dark-mode ready app using vector images for a polished UI;
-- Capture and handle user input with UITextField and the delegate pattern;
-- Explore Swift protocols, extensions, computed properties and the guard keyword;
-- Use closures and completion handlers to manage asynchronous tasks;
-- Fetch live data using URLSession and parse JSON with Encodable and Decodable;
-- Apply Grand Central Dispatch to update the main thread safely;
-- Integrate Core Location for location-based weather updates;
-- Combine manual city search with automatic location detection for a complete user experience.
+## Project: Clima.
 
-This stage expands your Swift knowledge into networking, asynchronous programming and location services, setting the foundation for fully interactive, real-world applications.
+A dark-mode weather application, that provides real-time weather updates based on the user's current GPS location or a manually searched city. The application fetches live data from a weather API and displays temperature, conditions and a corresponding weather icon.
+
+----
+
+### Key Concepts.
+
+- **Networking:** `URLSession` for HTTP requests, completion handlers closures.
+- **Data Parsing:** JSON decoding with `Codable` (`Encodable` & `Decodable`).
+- **Location:** Core Location framework for GPS-based weather updates.
+- **Architecture:** Delegate pattern, protocols and extensions.
+- **Swift Features:** Computed properties, `guard` keyword, type safety.
+- **UI:** Dark mode support, vector assets, `UITextField` with delegate.
+
+----
+
+### Project Structure.
+
+```
+Clima/
+├── Controller/
+│   ├── WeatherViewController.swift
+│   └── WeatherManager.swift
+├── Model/
+│   ├── WeatherData.swift
+│   └── WeatherModel.swift
+├── View/
+│   └── Base.lproj/
+│       └── Main.storyboard
+├── AppDelegate.swift
+├── SceneDelegate.swift
+└── Info.plist
+```
+
+----
+
+<p align="right">
+  <a href="../../README.md">Back to Main README.</a>
+</p>
