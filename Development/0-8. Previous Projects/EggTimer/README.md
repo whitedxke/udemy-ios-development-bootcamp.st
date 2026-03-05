@@ -6,8 +6,6 @@ The main goal was to learn, how to work with timers in Swift and apply different
 
 This project served as a practical exercise in finding solutions independently using Apple Documentation, Stack Overflow and other resources.
 
-----
-
 ## Key Concepts.
 
 - Swift collection types, including `Dictionary`.
@@ -15,8 +13,6 @@ This project served as a practical exercise in finding solutions independently u
 - Conditional statements: `if..else` and `switch`.
 - Functions with return values.
 - `ProgressView` for visual feedback.
-
-----
 
 ## Project Structure.
 
@@ -30,8 +26,6 @@ EggTimer/
 │   └── LaunchScreen.storyboard
 └── Info.plist
 ```
-
-----
 
 <p align="right">
   <a href="../../../README.md">Back to Main README.</a>

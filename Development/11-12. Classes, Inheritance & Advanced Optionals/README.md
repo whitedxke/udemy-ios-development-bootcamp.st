@@ -2,8 +2,6 @@
 
 A deeper dive into object-oriented programming in Swift, exploring the power of classes, inheritance and the nuanced handling of optionals. This module refines the understanding of the MVC design pattern and expands into multi-screen navigation and dynamic UI behavior.
 
-----
-
 ## Projects.
 
 ### BMI Calculator.
@@ -35,8 +33,6 @@ BMI-Calculator/
 └── Info.plist
 ```
 
-----
-
 ### Tipsy.
 
 A tip calculator, that allows users to enter a bill amount, select a tip percentage and split the total among multiple people. The result is displayed on a dedicated screen.
@@ -61,8 +57,6 @@ Tipsy/
 ├── SceneDelegate.swift
 └── Info.plist
 ```
-
-----
 
 <p align="right">
   <a href="../../README.md">Back to Main README.</a>

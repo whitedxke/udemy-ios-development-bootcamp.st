@@ -1,26 +1,8 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/Swift-2396F3?logo=swift&logoColor=white" alt="Swift">
-  <img src="https://img.shields.io/badge/iOS-2396F3?logo=apple&logoColor=white" alt="iOS">
-  <img src="https://img.shields.io/badge/UIKit-2396F3?logo=apple&logoColor=white" alt="UIKit">
-  <img src="https://img.shields.io/badge/SwiftUI-2396F3?logo=swift&logoColor=white" alt="SwiftUI">
-  <img src="https://img.shields.io/badge/Xcode-2396F3?logo=xcode&logoColor=white" alt="Xcode">
-</p>
+# udemy-ios-development-bootcamp.st.
 
-<p align="center">
-  A collection of iOS applications developed during the
-  <br>
-  <strong>iOS Application Development Bootcamp</strong> by Dr. Angela Yu (Udemy).
-</p>
+A collection of iOS applications developed during the <strong>iOS Application Development Bootcamp</strong> by Dr. Angela Yu (Udemy). Each project explores a different aspect of iOS development — from Swift fundamentals to networking, architectural patterns and declarative UI with SwiftUI.
 
-<p align="center">
-  Each project explores a different aspect of iOS development — from Swift fundamentals
-  <br>
-  to networking, architectural patterns, and declarative UI with SwiftUI.
-  <br><br>
-  All code has been independently adapted and reworked based on the course materials.
-</p>
-
-----
+All code has been independently adapted and reworked based on the course materials.
 
 ## Table of Contents.
 
@@ -35,8 +17,6 @@
   - [Local Data Persistence.](#18-local-data-persistence)
 - [License.](#license)
 
-----
-
 ## About.
 
 This repository documents a progressive learning path through the **Complete iOS Application Development Bootcamp** — a comprehensive course covering the full spectrum of modern iOS development.
@@ -49,8 +29,6 @@ The journey follows a structured progression:
 4. **Networking** — REST APIs, JSON parsing, asynchronous programming, Core Location.
 5. **Declarative UI** — SwiftUI, state management, modern application design.
 6. **Data Persistence** — UserDefaults, Core Data.
-
-----
 
 ## Tech Stack.
 
@@ -96,8 +74,6 @@ The journey follows a structured progression:
     </tr>
   </tbody>
 </table>
-
-----
 
 ## Projects.
 
@@ -190,8 +166,6 @@ The journey follows a structured progression:
     </tr>
   </tbody>
 </table>
-
-----
 
 ## License.
 

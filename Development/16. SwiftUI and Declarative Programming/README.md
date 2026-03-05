@@ -2,8 +2,6 @@
 
 An introduction to SwiftUI — Apple's declarative framework for building user interfaces. This module shifts from the imperative UIKit approach to a modern, state-driven paradigm where the UI automatically updates in response to data changes.
 
-----
-
 ## Projects.
 
 ### Personal Card.
@@ -26,8 +24,6 @@ PersonalCard/
 └── Info.plist
 ```
 
-----
-
 ### Dicee.
 
 A dice rolling application, where the user taps a button to generate two random dice faces. A simple project focused on state management and random number generation in SwiftUI.
@@ -45,8 +41,6 @@ Dicee/
 ├── DiceeApp.swift
 └── ContentView.swift
 ```
-
-----
 
 ### H4X0R.
 
@@ -71,8 +65,6 @@ H4X0R/
 │   └── WebView.swift
 └── H4X0RApp.swift
 ```
-
-----
 
 <p align="right">
   <a href="../../README.md">Back to Main README.</a>

@@ -2,8 +2,6 @@
 
 A module dedicated to architectural principles in iOS development. The focus is on applying the **MVC (Model-View-Controller)** design pattern and improving code scalability through proper structuring and refactoring.
 
-----
-
 ## Projects.
 
 ### Quizzler.
@@ -33,8 +31,6 @@ Quizzler/
 └── Info.plist
 ```
 
-----
-
 ### Destini.
 
 A choose-your-own-adventure interactive story application. The user navigates through a branching narrative by making choices, with each decision leading to a different path and outcome.
@@ -61,8 +57,6 @@ Destini/
 ├── SceneDelegate.swift
 └── Info.plist
 ```
-
-----
 
 <p align="right">
   <a href="../../README.md">Back to Main README.</a>
